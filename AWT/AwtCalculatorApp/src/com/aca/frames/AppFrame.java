@@ -1,8 +1,12 @@
 package com.aca.frames;
 
+import java.awt.BorderLayout;
 import java.awt.Button;
+import java.awt.FlowLayout;
 import java.awt.Frame;
 import java.awt.GridLayout;
+import java.awt.LayoutManager;
+import java.awt.Panel;
 import java.awt.TextField;
 
 import com.aca.handlers.CalculationsHandler;
@@ -22,8 +26,14 @@ public class AppFrame extends Frame{
 	
 	private void createUI()
 	{
+		
+		Panel numbers = new Panel();
+		
+		Panel symbols = new Panel();
+		symbols.setLayout(new FlowLayout());
+		
 		setTitle("Calculator");
-		calculationTextField = new TextField(30);
+		calculationTextField = new TextField(300);
 		setLayout(new GridLayout(5,3,05,10));
 	
 	    calculationsHandler = new CalculationsHandler(calculationTextField);
@@ -86,6 +96,7 @@ public class AppFrame extends Frame{
 		clear = new Button("Clear");
 		clear.addActionListener(calculationsHandler);
 
+		
         this.add(calculationTextField);
         this.add(exit);
 		this.add(clear);
