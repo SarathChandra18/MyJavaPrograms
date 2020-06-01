@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JfaceDecorator
+Bundle-SymbolicName: JfaceDecorator
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: JfaceDecorator
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.swt,
+ org.eclipse.jface
