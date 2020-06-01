@@ -9,7 +9,7 @@ import static org.junit.Assert.assertNotEquals;
 
 import org.junit.Test;
 
-public class LinkedistTest {
+public class LinkedListTest {
 
 	CustomLinkedList cll = new CustomLinkedList();
 
