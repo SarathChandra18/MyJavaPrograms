@@ -93,5 +93,18 @@ public class LinkedListTest {
 		
 		assertEquals("CustomLinkedList[sarath:vijay:naveen]",cll.toString());
 	}
+	
+	@Test
+	public void testSet() {
+		cll.add("sarath");
+		cll.add("vijay");
+		cll.add("naveen");
+		
+		cll.set(0, "chandra");
+		
+		assertEquals("chandra",cll.get(0));
+
+		assertEquals(4,cll.size());
+	}
 
 }

@@ -59,7 +59,7 @@ public class CustomLinkedList {
 			currentNode = currentNode.nextNode;
 		}
 		node.nextNode = currentNode.nextNode;
-		currentNode.nextNode = node;
+		//currentNode.nextNode = node;
 
 	}
 	
